@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  /* Color tokens from design system */
+  --color-0f0f0f: #0f0f0f;
+  --color-1a1a1a: #1a1a1a;
+  --color-2a2a2a: #2a2a2a;
+  --color-ffffff: #ffffff;
+  --color-bb86fc: #bb86fc;
+  --color-696969: #696969;
+  --color-000000: #000000;
+  --color-0d0714: #0d0714;
+  --color-1d1825: #1d1825;
+  --color-15101c: #15101c;
+  --color-9e78cf: #9e78cf;
+  --color-78cfb0: #78cfb0;
+  --color-777777: #777777;
+  --color-3e1671: #3e1671;
+
+  /* Border radius tokens */
+  --radius-5: 5px;
+  --radius-10: 10px;
+  --radius-20: 20px;
+  --radius-50: 50px;
+  --radius-75: 75px;
+
+  /* Typography tokens (only those used on this screen) */
+  /* typo_4 */
+  --typo-4-family: 'Inter', sans-serif;
+  --typo-4-size: 64px;
+  --typo-4-weight: 400;
+  --typo-4-line-height: 77.455px;
+  --typo-4-letter-spacing: 0px;
+  --typo-4-color: var(--color-ffffff);
+
+  /* typo_5 */
+  --typo-5-family: 'Inter', sans-serif;
+  --typo-5-size: 20px;
+  --typo-5-weight: 400;
+  --typo-5-line-height: 24.205px;
+  --typo-5-letter-spacing: 0px;
+  --typo-5-color: var(--color-ffffff);
+
+  /* typo_6 */
+  --typo-6-family: 'Inter', sans-serif;
+  --typo-6-size: 36px;
+  --typo-6-weight: 700;
+  --typo-6-line-height: 43.568px;
+  --typo-6-letter-spacing: 0px;
+  --typo-6-color: var(--color-ffffff);
+}
+
+/* CSS Reset / Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-0f0f0f);
+  color: var(--color-ffffff);
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* Typography helper classes from tokens */
+.typo-4 {
+  font-family: var(--typo-4-family);
+  font-size: var(--typo-4-size);
+  font-weight: var(--typo-4-weight);
+  line-height: var(--typo-4-line-height);
+  letter-spacing: var(--typo-4-letter-spacing);
+  color: var(--typo-4-color);
+  text-align: left;
+  margin: 0;
+}
+
+.typo-5 {
+  font-family: var(--typo-5-family);
+  font-size: var(--typo-5-size);
+  font-weight: var(--typo-5-weight);
+  line-height: var(--typo-5-line-height);
+  letter-spacing: var(--typo-5-letter-spacing);
+  color: var(--typo-5-color);
+  text-align: left;
+  margin: 0;
+}
+
+.typo-6 {
+  font-family: var(--typo-6-family);
+  font-size: var(--typo-6-size);
+  font-weight: var(--typo-6-weight);
+  line-height: var(--typo-6-line-height);
+  letter-spacing: var(--typo-6-letter-spacing);
+  color: var(--typo-6-color);
+  text-align: left;
+  margin: 0;
+}
+
+/* Utility */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
